@@ -8,11 +8,47 @@ header {
     margin: 0 auto;
 }
 .header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
     margin: 20px 0;
-    outline: 2px solid red;
+    outline: 2px solid blue;
 }
-.header-logo span :first-child  {
+.header-logo {
+	display: inline-block;
+}
+.header-logo h1:nth-child(1)  {
     color: #b6c600;
     font-size: 32px;
+}
+.header-logo h1:nth-child(2) {
+	color:red;
+	font-size:20px;
+}
+.header-contacts {
+	text-align: right;
+}
+.header-contacts-number {
+	margin-right:10px;
+	display: inline-block;
+}
+.header-contacts-button {
+	display: inline-block;	
+}
 
+.slider {
+	width: 100%;
+
+}
+.slides {
+	text-align: center;
+	height: 426px;
+	
+}
+.slide1 {
+	background-image: url("../images/banner-img1.jpg");
+}
+.slide1-content {
+	margin-top: 20px;
+	outline: 2px solid red;
 }

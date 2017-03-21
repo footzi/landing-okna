@@ -4,17 +4,46 @@
         <meta charset="utf-8">
         <title>Окна без посредников</title>
         <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/jquery.bxslider.min.css">
         <link rel="stylesheet" href="styles/main.css">
+        
     </head>
     <body>
         <header>
             <div class="header-wrapper">
                 <div class="header-logo">
-                    <span>ОКНА</span> <br>
-                    <span>БЕЗ ПОСРЕДНИКОВ</span>
+                    <h1>ОКНА</span> </h1>
+                    <h1>БЕЗ ПОСРЕДНИКОВ</h1>
+                </div>
+                <div class="header-contacts">
+                    <div class="header-contacts-number">Тел. +7(953)1733296</div>
+                    <div class="header-contacts-button">Позвоните мне</div>
                 </div>
             </div>
         </header>
+        <main>
+            <div class="slider">
+                <ul class="bxslider">
+                    <li class="slides slide1">  
+                        <div class="slide1-content">
+                            <h2>Cкидки на окна до 50%</h2>
+                            <p>только до конца марта</p>
+                        </div>   
+                    </li>
+                    <li class="slides slide1"> </li>            
+                </ul>
+            </div>
+        </main>
 
     </body>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script>
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: true,
+            auto:true,
+            speed:100
+        });
+    </script>
 </html>
