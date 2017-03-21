@@ -1,0 +1,18 @@
+body {
+    /*width: 1170px;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    outline: 2px solid red;
+    width: 880px;
+    margin: 0 auto;
+}
+.header-wrapper {
+    margin: 20px 0;
+    outline: 2px solid red;
+}
+.header-logo span :first-child  {
+    color: #b6c600;
+    font-size: 32px;
+
+}
