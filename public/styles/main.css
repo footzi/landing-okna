@@ -184,7 +184,17 @@ header {
 	margin-bottom: 26px;
 }
 
-
+/*************************statictics**************************/
+.statistics {
+	background-image: url("../images/banner-img2.jpg");
+	background-attachment:scroll; 
+	height: 200px;
+	text-align: center;
+	width:880px;
+	outline:2px solid red;
+	margin: 0 auto;
+	padding: 0 30px;
+}
 /*************************shares**************************/
 .shares {
 	text-align: center;
@@ -213,9 +223,25 @@ header {
 }
 .shares-item {
 	outline:2px solid black;
-	text-align: justify;
+	text-align: center;
+	margin-bottom: 20px;
 }
 .shares-item-info {
+	position: relative;
+	top:-20px;
+	text-align: left;
+	color:#44453e;
 	display: inline-block;
 	outline:2px solid red;
+}
+.shares-item-info-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+.shares-item-info-text {
+	margin-top: 20px;
+	font-size: 15px;	
+}
+.shares-item-info-text p {
+	margin: 0;
 }
