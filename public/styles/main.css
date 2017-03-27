@@ -15,7 +15,6 @@
 
 
 body {
-    /*width: 1170px;*/
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -161,7 +160,7 @@ header {
 .services-item {
 	outline:2px solid red;
 	display: inline-block;
-	background-color: rgba(209, 211, 184, 0.3);
+	background-color: #f4f0eb;
 	width: 230px;
   	height: 436px;
 	text-align: center;  
@@ -187,31 +186,50 @@ header {
 /*************************statictics**************************/
 .statistics {
 	background-image: url("../images/banner-img2.jpg");
-	background-attachment:scroll; 
-	height: 200px;
+	background-size: 100% 100%;
+	background-repeat:no-repeat; 
+	background-attachment:fixed;
+	
+	height: 300px;
 	text-align: center;
-	width:880px;
 	outline:2px solid red;
-	margin: 0 auto;
 	padding: 0 30px;
+	color:#44453e;
+}
+.statistics-content {
+	width: 880px;
+	margin: 0 auto;
+}
+.statistics-content h2 {
+	display: inline-block;
+	margin: 50px 0;
+	font-family: "Arsenal-Bold";
+	font-weight: bold;
+	font-size: 35px;
+}
+.statistics-content h3 {
+	font-family: "Arsenal-Regular";
+	font-size: 30px;
 }
 /*************************shares**************************/
 .shares {
 	text-align: center;
     margin: 0 auto;
-	padding-top:25px; 
 	background-image: url("../images/shares-fon.jpg");
 	background-repeat:no-repeat; 
 	width:880px;
 	height: 975px;
+	box-shadow:0 0 30px rgba(0,0,0,0.5);
 }
 .shares h2 {
+	display: inline-block;
+	margin-top: 25px;
 	font-family: "Arsenal-Bold";
 	font-size: 30px;
 	font-weight: bolder;
 	color:#44453e;
 }
-.shares p {
+.shares-title {
 	margin: 25px 0;
 	color:#44453e;
 	font-family: "Arsenal-Regular";
@@ -221,27 +239,105 @@ header {
 	color:#507532;
 	text-decoration: none;
 }
+.shares-left {
+	text-align: right;
+	display:inline-block; 
+	width: 50%;
+}
+.shares-right {
+	position: relative;
+    top: -30px;
+	width:49%;
+	display:inline-block; 
+}
+.shares-right-2 {
+	top:0;
+	text-align: left;
+}
+.shares-left-2 {
+	position: relative;
+    top: -30px;
+	text-align: center;
+}
+.shares-right-3 {
+	 top: -120px;
+}
 .shares-item {
 	outline:2px solid black;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .shares-item-info {
-	position: relative;
-	top:-20px;
+	width: 266px;
 	text-align: left;
 	color:#44453e;
 	display: inline-block;
 	outline:2px solid red;
 }
+.shares-item-info-2 {
+	text-align: right;
+}
 .shares-item-info-name {
+	color: #44453e;
 	font-size: 20px;
 	font-weight: bold;
 }
 .shares-item-info-text {
+	color: #999999;
 	margin-top: 20px;
 	font-size: 15px;	
 }
-.shares-item-info-text p {
-	margin: 0;
+
+
+
+.reviews {
+	outline:2px solid gold;
+	margin-bottom: 50px;
+}
+.reviews-bxslider-item {
+	outline: 2px solid #507532;
+	padding: 20px 30px 57px 30px;
+	/*background-color: #f4f0eb;*/
+	background-color: green;
+}
+
+.reviews-bxslider-item-title img {
+	display: inline;
+}
+.reviews-bxslider-item-title-date {
+	margin-left: 20px;
+	display: inline;
+	font-size: 12px;
+	color: #999999;
+}
+.reviews-bxslider-item-content {
+	outline:2px solid red;
+	color:#44453e;
+	font-size: 15px;
+}
+.reviews-bxslider-item-content-name {
+	margin: 40px 0;
+	
+	font-weight: bold;
+}
+.reviews-bxslider-item-content-text {
+	overflow: hidden;
+	text-align: justify;
+}
+.reviews-bxslider-item-more {
+	margin-top: 18px;
+    right: 28px;
+	position: absolute;
+	text-align: right;
+	text-decoration: underline;
+	font-size:12px;
+	color:#999999;
+	cursor: pointer;
+}
+.reviews .bx-controls {
+	display: none;
+}
+
+.reviews-bxslider-item-content-text-hide {
+	display: none;
 }
